@@ -1,0 +1,96 @@
+.commentSection {
+    .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $lightColor1;
+    }
+
+    .subTitle {
+        font-size: 0.9rem;
+        color: $blackColor2;
+    }
+
+    form {
+        label {
+            font-size: 1rem;
+            color: $blackColor2;
+        }
+
+        input {
+            outline: none;
+            box-shadow: none;
+            border-width: 2px;
+            border-style: dashed;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                border: 2px dashed $yellowColor2;
+            }
+
+            &::placeholder {
+                font-size: 0.8rem;
+            }
+        }
+
+        textarea {
+            outline: none;
+            box-shadow: none;
+            border-width: 2px;
+            border-style: dashed;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                border: 2px dashed $yellowColor2;
+            }
+
+            &::placeholder {
+                font-size: 1rem;
+            }
+        }
+
+        .btnSubmit {
+            background-color: $yellowColor;
+
+        }
+    }
+
+    .commnetsNumber {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $blackColor2;
+    }
+
+    .commnetList {
+        .comment {
+            position: relative;
+            overflow: hidden;
+            background: $lightColor2;
+            border-radius: 10px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 3px;
+                height: 100%;
+                background-color: $yellowColor2;
+
+            }
+
+            .name {
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: $lightColor1;
+            }
+
+            .description {
+                font-size: 0.9rem;
+                font-weight: bold;
+                text-align: justify;
+            }
+        }
+    }
+}

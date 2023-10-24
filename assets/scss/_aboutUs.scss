@@ -1,0 +1,35 @@
+.aboutUs {
+    .titlePageProduct {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $lightColor1;
+    }
+
+    .aboutSection {
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: $yellowColor2;
+        }
+
+        .title {
+            color: $blackColor2;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .description {
+            text-align: justify;
+            font-size: 1rem;
+        }
+    }
+
+}

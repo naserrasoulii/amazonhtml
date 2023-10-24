@@ -1,0 +1,160 @@
+.breadcrumpCustom {
+    --bs-breadcrumb-divider: ">";
+
+    .breadcrumb {
+        .breadcrumb-item {
+            font-size: 0.8rem;
+
+            &.active {
+                color: $blackColor;
+                // font-size: 0.8rem;
+            }
+
+            a {
+                color: $lightColor1 !important;
+            }
+        }
+    }
+
+}
+
+.productInfo {
+    .priceProduct {
+        .price {
+            color: $blackColor;
+
+            span {
+                font-size: 1rem;
+            }
+        }
+
+        .btnCart {
+            background: $yellowColor;
+            font-size: 0.9rem;
+        }
+
+        .btnBuy {
+            background: $yellowColor2;
+            font-size: 0.9rem;
+        }
+    }
+
+    .productName {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .update {
+        color: $blackColor;
+
+        span {
+            color: $lightColor1;
+            font-weight: 500;
+        }
+    }
+
+    .fileFormat {
+        color: $blackColor;
+
+        span {
+            color: $lightColor1;
+            font-weight: 500;
+        }
+    }
+
+    .infoNumber {
+        color: $blackColor;
+
+        span {
+            color: $lightColor1;
+            font-weight: 500;
+        }
+    }
+
+    .supportTime {
+        color: $blackColor;
+
+        span {
+            color: $lightColor1;
+            font-weight: 500;
+        }
+    }
+
+    .feature {
+        .item {
+            i {
+                color: $lightColor1;
+                font-size: 2rem;
+            }
+
+            p {
+                color: $blackColor3;
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+
+    .bottomProduct {
+        .title {
+            font-weight: bold;
+            color: $lightColor1;
+        }
+
+        .description {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.productDescription {
+    .titleDescriptiom {
+        margin: 1rem 0;
+        color: $lightColor1;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .textdescription {
+        text-align: justify;
+        font-size: 1rem;
+    }
+}
+.tagsAndCategory{
+    .title{
+        color: $lightColor1;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .categoryItem{
+        li{
+            a{
+                color: $blackColor;
+            }
+        }
+    }
+}
+.supportBox{
+    .items{
+        border:  1px dashed $lightColor1;
+        .title{
+            font-size: 1.8rem;
+            color: $lightColor1;
+            font-weight: bold;
+        }
+        .description{
+            font-size: 1rem;
+            color: #000;
+        }
+        .price{
+            color: $blackColor2;
+        }
+        a{
+            &.btn{
+
+                background: $yellowColor;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,269 @@
+@media (max-width:320px) {
+    .mtCustom {
+        margin-top: -50px;
+    }
+
+    .topSlider {
+        .swiper {
+            .swiper-button-next {
+                top: 40px;
+
+                &::after {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .swiper-button-prev {
+                top: 40px;
+
+                &::after {
+                    font-size: 1.5rem;
+                }
+            }
+
+
+        }
+    }
+
+    .sliderProduct {
+        .sliderProductSwiper {
+            .swiper-button-next {
+                padding: 0.5rem 1rem;
+            }
+
+            .swiper-button-prev {
+                padding: 0.5rem 1rem;
+            }
+
+            .swiper-slide {
+                .decriptionProduct {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .col-Custom {
+        width: 50% !important;
+    }
+
+    .cartView {
+        width: 100%;
+
+    }
+    .supportBox{
+        .items{
+            .title{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media (min-width:321px) and (max-width:576px) {
+    .mtCustom {
+        margin-top: -60px;
+    }
+
+    .topSlider {
+        .swiper {
+            .swiper-button-next {
+                top: 50px;
+
+                &::after {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .swiper-button-prev {
+                top: 50px;
+
+                &::after {
+                    font-size: 1.5rem;
+                }
+            }
+
+
+        }
+    }
+
+    .sliderProduct {
+        .sliderProductSwiper {
+            .swiper-button-next {
+                padding: 0.5rem 1rem;
+            }
+
+            .swiper-button-prev {
+                padding: 0.5rem 1rem;
+            }
+
+            .swiper-slide {
+                .decriptionProduct {
+                    text-align: center;
+                }
+
+                .imgContainer {
+                    height: 300px;
+                }
+            }
+
+
+        }
+    }
+
+    .col-Custom {
+        width: 50% !important;
+    }
+
+    .cartView {
+        width: 100%;
+    }
+    .supportBox{
+        .items{
+            .title{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media (min-width:577px) and (max-width:768px) {
+    .topSlider {
+
+        .swiper {
+            .swiper-button-next {
+                top: 80px;
+
+                &::after {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .swiper-button-prev {
+                top: 80px;
+
+                &::after {
+                    font-size: 1.5rem;
+                }
+            }
+
+
+        }
+    }
+
+    .mtCustom {
+        margin-top: -110px;
+    }
+
+    .col-Custom {
+        width: 33.33% !important;
+    }
+    .supportBox{
+        .items{
+            .title{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+    .sliderProduct {
+        .sliderProductSwiper {
+            .swiper-button-next {
+                padding: 0.5rem 1rem;
+            }
+
+            .swiper-button-prev {
+                padding: 0.5rem 1rem;
+            }
+
+            .swiper-slide {
+                .decriptionProduct {
+                    text-align: center;
+                }
+
+                .imgContainer {
+                    height: 300px;
+                }
+            }
+
+
+        }
+    }
+
+    .topSlider {
+
+        // height: auto;
+        .swiper {
+            .swiper-button-next {
+                top: 80px;
+
+            }
+
+            .swiper-button-prev {
+                top: 80px;
+
+
+            }
+
+
+        }
+    }
+
+    .mtCustom {
+        margin-top: -180px;
+    }
+
+    .col-Custom {
+        width: 20% !important;
+    }
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+    .topSlider {
+
+        // height: auto;
+        .swiper {
+            .swiper-button-next {
+                top: 100px;
+
+            }
+
+            .swiper-button-prev {
+                top: 100px;
+
+
+            }
+
+
+        }
+    }
+
+    .mtCustom {
+        margin-top: -250px;
+    }
+
+    .col-Custom {
+        width: 20% !important;
+    }
+}
+
+@media (min-width:1201px) and (max-width:1400px) {
+    .mtCustom {
+        margin-top: -280px;
+    }
+
+}
+
+@media (min-width:1401px) and (max-width:1600px) {
+    .mtCustom {
+        margin-top: -340px;
+    }
+}
+
+@media (min-width:1601px) {
+    .mtCustom {
+        margin-top: -400px;
+    }
+}

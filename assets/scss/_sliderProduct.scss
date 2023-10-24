@@ -1,0 +1,73 @@
+.sliderProduct {
+    .title {
+        color: $blackColor;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    .more {
+        color: $lightColor1;
+        font-size: 1rem;
+    }
+
+    .sliderProductSwiper {
+        .swiper-button-next {
+            box-shadow: 0 1px 3px #888;
+            padding: 3.5rem 2rem;
+            background: #ebebeb;
+            color: $lightColor1;
+            margin-top: -60px;
+
+            &::after {
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-shadow: 0 3px #fff;
+            }
+        }
+
+        .swiper-button-prev {
+            box-shadow: 0 1px 3px #888;
+            font-size: 0.8rem !important;
+            padding: 3.5rem 2rem;
+            background: #ebebeb;
+            color: $lightColor1;
+            margin-top: -60px;
+
+            &::after {
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-shadow: 0 3px #fff;
+            }
+        }
+
+        .swiper-slide {
+
+            .imgContainer {
+                width: 100%;
+                height: 200px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: 100% 100%;
+                }
+            }
+
+            .off {
+                border-radius: 3px;
+                font-size: 1rem;
+                font-weight: normal;
+            }
+
+            .textDeal {
+                color: $redColor1;
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+
+            .decriptionProduct {
+                color: $blackColor;
+            }
+        }
+    }
+}

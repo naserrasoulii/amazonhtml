@@ -1,0 +1,44 @@
+.products {
+    .titlePageProduct {
+        font-size: 2rem;
+        color: $lightColor1;
+        text-align: center;
+        // border-bottom: 1px dashed $yellowColor2;
+        padding-bottom: 20px;
+    }
+
+    .categoryFilter {
+        .btn {
+            background-color: $yellowColor2;
+            border: none;
+            color: $blackColor3;
+
+            &.active {
+                background-color: $yellowColor;
+            }
+        }
+    }
+
+    .paginationProduct {
+        ul {
+            .page-link {
+                color: $blackColor2;
+                // background: $lightColor;
+                font-size: 1rem;
+                border: none;
+                // border-color: $blackColor2;
+                box-shadow: none;
+                outline: none;
+            }
+
+            .page-item {
+                &.active {
+                    .page-link {
+                        background: $yellowColor2;
+                    }
+                }
+            }
+        }
+    }
+
+}

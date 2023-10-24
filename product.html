@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/image/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstarp 5.2.3 and Bootstarp icon  -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/bootstrapicon.css" rel="stylesheet" />
+    <!-- Swiper js -->
+    <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Custom css -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <title>Database</title>
+</head>
+
+<body>
+    <!-- Top navbar Start -->
+    <section class="topNavbar container-fluid px-custom bg-dark py-2 py-md-0">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="logoContainer">
+                    <a href="index.html">
+                        <img src="./assets/image/favicon.png" width="80" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="col-8 col-md-4 col-lg-5 col-xl-6 ">
+                <div class="input-group" id="inputGroup">
+                    <input type="text" class="form-control" id="seacrhInput" placeholder="Enter Keyword......">
+                    <a href="#" class="input-group-text">
+                        <span>
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 d-md-none">
+                <button class="navbar-toggler btn btn-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 col-xl-4 mb-2 mb-md-0 d-md-block d-none">
+                <div class="row justify-content-between align-items-center text-center">
+                    <div class="col-7">
+                        <a href="#" class="btn btn-login">
+                            sign up / sign in
+                        </a>
+                    </div>
+                    <div class="col-5 cart">
+                        <button class="cartViewButton">
+                            <i class="bi bi-basket"></i>
+                            <span>350,000$</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top navbar End -->
+    <!-- navbar Start -->
+    <nav class="navbar navbar-expand-md px-custom " id="navbar">
+        <div class="container-fluid mxwCustom">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Database</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">DB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">Product</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a href="#" class="nav-link">
+                            sign up / sign in
+                        </a>
+                    </li>
+                    <li class="nav-item d-md-none cartViewButton">
+                        <i class="bi bi-basket"></i>
+                        <span>350,000$</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- navbar End -->
+    <!-- Cart View Start -->
+    <div class="cartView">
+        <div class="title  px-2 text-center d-flex align-items-center justify-content-between">
+            <p class="titleCart">
+                Your Cart
+            </p>
+            <i class="bi bi-x-lg closeBtn"></i>
+        </div>
+        <div class="content py-5 px-1">
+            <a href="#">
+                <div class="item p-1 bg-white rounded shadow d-flex justify-content-between align-items-center mb-2">
+                    <img src="./assets/image/product/pr3.jpg" class="rounded me-1" width="50px" height="50px" />
+                    <p class="name me-1">
+                        110 Database Number
+                    </p>
+                    <span class="price">$110</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="item p-1 bg-white rounded shadow d-flex justify-content-between align-items-center mb-2">
+                    <img src="./assets/image/product/pr3.jpg" class="rounded me-1" width="50px" height="50px" />
+                    <p class="name me-1">
+                        110 Database Number
+                    </p>
+                    <span class="price">$110</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="item p-1 bg-white rounded shadow d-flex justify-content-between align-items-center mb-2">
+                    <img src="./assets/image/product/pr3.jpg" class="rounded me-1" width="50px" height="50px" />
+                    <p class="name me-1">
+                        110 Database Number
+                    </p>
+                    <span class="price">$110</span>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="clearing">
+            <a href="#" class="btn w-100 rounded-0 py-3"> $179 CheckOut</a>
+        </div>
+    </div>
+    <div class="cartViewOverlay d-none"></div>
+    <!-- Cart View End -->
+
+
+    <!-- Section Product Start -->
+    <section class="container-fluid px-custom py-5 products">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="titlePageProduct">Product List</h1>
+            </div>
+            <div class="col-12 mb-3 mx-auto text-center categoryFilter">
+                <a href="#" class="btn btn-sm">
+                    best Seller
+                </a>
+                <a href="#" class="btn btn-sm active">
+                    Category 1
+                </a>
+                <a href="#" class="btn btn-sm">
+                    Category 2
+                </a>
+            </div>
+            <!-- Products -->
+            <div class="container-fluid px-custom relatedProducts py-5 ">
+                <div class="row px-3">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product">
+                                <img src="./assets/image/product/1.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product">
+                                <img src="./assets/image/product/2.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product">
+                                <img src="./assets/image/product/3.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product ">
+                                <img src="./assets/image/product/4.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database Database seDatabase number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product">
+                                <img src="./assets/image/product/1.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product">
+                                <img src="./assets/image/product/2.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product">
+                                <img src="./assets/image/product/3.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product ">
+                                <img src="./assets/image/product/4.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database Database seDatabase number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product">
+                                <img src="./assets/image/product/1.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product">
+                                <img src="./assets/image/product/2.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product">
+                                <img src="./assets/image/product/3.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <a href="#">
+                            <div class="card border-0 shadow product ">
+                                <img src="./assets/image/product/4.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Database Database seDatabase number phone</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Products -->
+            <!-- Pagination -->
+            <div class="col-12 text-center paginationProduct">
+                <nav class="d-flex">
+                    <ul class="pagination mx-auto">
+                        <li class="page-item "><a class="page-link " href="#">Prev</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pagination -->
+        </div>
+    </section>
+    <!-- Section Product End -->
+
+
+    <!-- Footer Start -->
+    <footer class="container-fluid p-0 mt-3">
+        <div class="row">
+            <div class="col-12 topSection py-5 px-custom">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 mb-3">
+                        <h4 class="headerLink">
+                            AloData Database
+                        </h4>
+                        <img src="./assets/image/logo.png" class="img-fluid" />
+                        <p class="descFooter">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.tatem consequuntur autem inventore
+                            error praesentium alias!
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-3">
+                        <h4 class="headerLink">
+                            Get Know Us
+                        </h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">
+                                    About Alodata
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-3">
+                        <h4 class="headerLink">
+                            Title
+                        </h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">
+                                    About Alodata
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-3">
+                        <h4 class="headerLink">
+                            Title
+                        </h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">
+                                    About Alodata
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 logoSection pb-3">
+                <div class="row">
+                    <div class="col-4 col-md-2 mb-2 text-center">
+                        <div class="bg-light p-3 rounded">
+                            <img src="./assets/image/brands/clients-logo-01.png" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-2 text-center">
+                        <div class="bg-light p-3 rounded">
+                            <img src="./assets/image/brands/clients-logo-02.png" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-2 text-center">
+                        <div class="bg-light p-3 rounded">
+                            <img src="./assets/image/brands/clients-logo-03.png" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-2 text-center">
+                        <div class="bg-light p-3 rounded">
+                            <img src="./assets/image/brands/clients-logo-04.png" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-2 text-center">
+                        <div class="bg-light p-3 rounded">
+                            <img src="./assets/image/brands/clients-logo-05.png" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-2 text-center">
+                        <div class="bg-light p-3 rounded">
+                            <img src="./assets/image/brands/clients-logo-06.png" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 bottomSection px-custom py-3">
+                <div class="row">
+                    <div class="col-Custom mb-3">
+                        <a href="#">
+                            <p class="title">
+                                Sell on Alodata
+                            </p>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-Custom mb-3">
+                        <a href="#">
+                            <p class="title">
+                                Sell on Alodata
+                            </p>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-Custom mb-3">
+                        <a href="#">
+                            <p class="title">
+                                Sell on Alodata
+                            </p>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-Custom mb-3">
+                        <a href="#">
+                            <p class="title">
+                                Sell on Alodata
+                            </p>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-Custom mb-3">
+                        <a href="#">
+                            <p class="title">
+                                Sell on Alodata
+                            </p>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-Custom mb-3">
+                        <a href="#">
+                            <p class="title">
+                                Sell on Alodata
+                            </p>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-Custom mb-3">
+                        <a href="#">
+                            <p class="title">
+                                Sell on Alodata
+                            </p>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-Custom mb-3">
+                        <a href="#">
+                            <p class="title">
+                                Sell on Alodata
+                            </p>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 bottomFooter px-custom py-3">
+                <p class="descriptionFooter ">
+                    Designed by <a href="#">
+                        Deltagroup
+                    </a> © All rights reserved
+
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

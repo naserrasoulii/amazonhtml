@@ -1,0 +1,36 @@
+body {
+    font-family: 'poppis';
+}
+
+.container-fluid {
+    &.mxwCustom {
+        max-width: 1400px !important;
+        margin: 0 auto;
+    }
+
+    .row {
+        max-width: 1400px !important;
+        margin: 0 auto;
+    }
+}
+
+.px-custom {
+    padding: 0 ;
+
+    @media (min-width:992px) {
+        padding: 0 2rem;
+
+    }
+}
+
+body {
+    background-color: #ebebee;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}

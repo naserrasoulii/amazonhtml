@@ -1,0 +1,77 @@
+.cartView {
+    position: fixed;
+    // display:none ;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 300px;
+    height: 100vh;
+    transition: all 1s ease-out;
+    background-color: #ebebeb;
+    overflow: hidden;
+
+    &.show {
+        right: 0;
+    }
+
+    .title {
+        i {
+            cursor: pointer;
+            font-size: 1.6rem;
+            color: $lightColor1;
+            font-weight: bold;
+        }
+
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+
+        .titleCart {
+            font-weight: bold;
+            color: $blackColor;
+        }
+    }
+
+    .clearing {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        .btn {
+            background: $greenColor;
+            color: #fff;
+            transition: all 0.5s;
+
+            &:hover {
+                box-shadow: 0 10px 30px #000;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .content {
+        .item {
+            .name {
+                color: $blackColor ;
+            }
+
+            .price {
+                color: $lightColor1;
+            }
+        }
+    }
+
+}
+
+.cartViewOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: $blackColor, $alpha: 0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+}

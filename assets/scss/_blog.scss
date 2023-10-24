@@ -1,0 +1,90 @@
+.blog {
+    .titlePageProduct {
+        font-size: 2rem;
+        color: $lightColor1;
+        text-align: center;
+        // border-bottom: 1px dashed $yellowColor2;
+        padding-bottom: 20px;
+    }
+
+    .post {
+
+        .card {
+            height: 100%;
+
+            img {
+                height: 150px;
+                object-position: top;
+                object-fit: cover;
+                // background-position: top !important;
+            }
+
+            .card-title {
+                font-size: 1rem;
+                color: $blackColor2;
+                font-weight: bold;
+            }
+
+            .description {
+                font-size: 0.9rem;
+                color: $lightColor1;
+            }
+
+            .card-footer {
+                .time {
+                    color: $lightColor1;
+                    opacity: 0.7;
+                    font-size: 0.8rem;
+                }
+
+                i {
+                    color: $lightColor1;
+                    opacity: 0.7;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .categoryPost {
+
+        .categoryTitle {
+            font-size: 2rem;
+            color: $blackColor2;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btnCategory {
+            width: 100%;
+            background-color: $yellowColor;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: $yellowColor2;
+            }
+        }
+    }
+
+    .paginationProduct {
+        ul {
+            .page-link {
+                color: $blackColor2;
+                // background: $lightColor;
+                font-size: 1rem;
+                border: none;
+                // border-color: $blackColor2;
+                box-shadow: none;
+                outline: none;
+            }
+
+            .page-item {
+                &.active {
+                    .page-link {
+                        background: $yellowColor2;
+                    }
+                }
+            }
+        }
+    }
+}

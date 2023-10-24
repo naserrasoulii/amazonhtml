@@ -1,0 +1,23 @@
+.topSlider {
+    width: 100%;
+    .swiper {
+        .swiper-button-next {
+            top: 100px;
+            color: #000;
+            text-shadow: 0 2px #fff;
+        }
+
+        .swiper-button-prev {
+            top: 100px;
+            color: #000;
+            text-shadow: 0 2px #fff;
+        }
+
+        .swiper-slide {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

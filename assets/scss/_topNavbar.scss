@@ -1,0 +1,74 @@
+.topNavbar {
+    .btn-login {
+        background-color: #fff;
+        border-radius: 2px;
+        text-transform: uppercase;
+        color: $blackColor;
+    }
+
+    .input-group {
+        &.indexTop{
+            z-index: 10;
+        }
+        input {
+
+            border: none;
+            border-radius: 5px;
+            box-shadow: none;
+
+            &::placeholder {
+                font-size: 0.8rem;
+                padding-left: 10px;
+            }
+
+        }
+
+        .input-group-text {
+            cursor: pointer;
+            border: 3px solid #fff;
+            border-radius: 5px;
+            background: $yellowColor;
+        }
+    }
+
+    .cartViewButton {
+        background: none;
+        border: none;
+        box-shadow: none;
+        color: #fff;
+
+        i {
+            font-size: 1.5rem;
+        }
+
+        span {
+            font-style: italic;
+            transform: translateY(10px);
+            display: inline-block;
+        }
+    }
+
+    .navbar-toggler {
+        position: relative;
+
+        // border-bottom: 2px solid #fff;
+        span {
+            display: none;
+        }
+
+        &::after {
+            content: '\F479';
+            font-family: bootstrap-icons !important;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        &:focus,
+        &:active {
+            background-color: transparent;
+        }
+
+
+
+    }
+}
